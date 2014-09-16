@@ -1,14 +1,20 @@
 /*
     Solving Problem 3
-    Expect result => "Fear-driven Development!"
+    When we pass a name to the greet function we expect that it return that same name with only the first letter capitalized.
 */
+/*globals console*/
+(function () {
+    'use strict';
 
-// When we pass a name to the greet function we expect that it return that same name with only the first letter capitalized.
+    function greet(word) {
+        return "Hello " + word.charAt(0).toUpperCase() + word.slice(1).toLocaleLowerCase() + "!";
+    }
 
-greet("trinity");
+    // Expected result => "Hello Trinity!"
+    console.log(greet("trinity"));
 
-// Expected result => "Hello Trinity!"
+    // Expected result => "Hello Neo!"
+    console.log(greet("NEO"));
 
-greet("NEO");
-
-// Expected result => "Hello Neo!"
+    return true;
+}());
