@@ -7,7 +7,7 @@
     'use strict';
 
     function greet(word) {
-        return "Hello " + word.charAt(0).toUpperCase() + word.slice(1).toLocaleLowerCase() + "!";
+        return "Hello " + word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() + "!";
     }
 
     // Expected result => "Hello Trinity!"
